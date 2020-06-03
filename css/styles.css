@@ -13,8 +13,6 @@
 
                                       All the styles for the bigger 
                                       structures in my page
-
-                                      https://www.hongkiat.com/blog/css-heart-shape/
                                       
  ************************************************************************************ */
 
@@ -34,22 +32,29 @@ body {
 header {
   padding-left: 280px;
   padding-bottom: 10px;
-  display: none;
+  /* display: none; */
 }
 
 main {
-  display: none;
+  /* display: none; */
   text-align: center;
 }
 
 footer {
-  display: none;
+  display: inline-block;
 }
 
 p {
   z-index: 2;
 }
 
+/* ************************************************************************************ 
+                                      specific Styles
+
+                                      All the styles for the smaller 
+                                      structures in my page
+                                      
+ ************************************************************************************ */
 
 /* ************************************************************************************ 
                                       Heart decoration
@@ -61,9 +66,6 @@ p {
                                       https://www.hongkiat.com/blog/css-heart-shape/
                                       
  ************************************************************************************ */ 
-#hiddenDiv{
-text-align: center;
-}
 
 .gameDiv {
   margin: 0;
@@ -104,7 +106,19 @@ text-align: center;
   background-color:rgba(250, 66, 66, 0.8);
 }
 
+/* ************************************************************************************ 
+                                      Welcome Div
 
+                                      just extra, not using an image yet.
+                                 
+ ************************************************************************************ */ 
+
+ #hiddenDiv{
+  text-align: center;
+
+  display: none;
+  }
+  
 /* ************************************************************************************ 
                                       Game Styles
                                       
@@ -112,6 +126,11 @@ text-align: center;
 
 .intro {
   padding-left: 280px;
+}
+
+.question{
+  width: 20%;
+  float: left;
 }
 
 .button2 {
