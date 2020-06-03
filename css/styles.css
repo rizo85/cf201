@@ -32,11 +32,11 @@ body {
 header {
   padding-left: 280px;
   padding-bottom: 10px;
-  /* display: none; */
+  display: none;
 }
 
 main {
-  /* display: none; */
+  display: none;
   text-align: center;
 }
 
@@ -116,7 +116,6 @@ p {
  #hiddenDiv{
   text-align: center;
 
-  display: none;
   }
   
 /* ************************************************************************************ 

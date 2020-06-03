@@ -26,8 +26,6 @@ function prompt0() {
 
   document.getElementById('main').style.display = 'block';
 
-  document.getElementById('footer').style.display = 'block';
-
   // so... if i have a black bkgrnd i wan to go black text teal bckgrnd....
 
   // document.getElementById('theWholeDocHTML').style.backgroundColor = '#32a8a6';
