@@ -1,0 +1,141 @@
+/* ************************************************************************************ 
+                                      Styles
+
+                                      Robert Rizo
+                                      Lab 2
+                                      Code Fellows
+
+ ************************************************************************************ */
+
+
+/* ************************************************************************************ 
+                                      Big Styles
+
+                                      All the styles for the bigger 
+                                      structures in my page
+
+                                      https://www.hongkiat.com/blog/css-heart-shape/
+                                      
+ ************************************************************************************ */
+
+ html {
+  background-color: #010111;
+  text-align: left;
+  padding: 10%;
+  overflow: hidden;
+}
+
+body {
+  color: #ffe6e6;
+  font-weight: 900;
+  
+}
+
+header {
+  padding-left: 280px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+main {
+  display: none;
+  text-align: center;
+}
+
+footer {
+  display: none;
+}
+
+p {
+  z-index: 2;
+}
+
+
+/* ************************************************************************************ 
+                                      Heart decoration
+
+                                      just extra, not using an image yet.
+
+                                      I got the heart div from:
+
+                                      https://www.hongkiat.com/blog/css-heart-shape/
+                                      
+ ************************************************************************************ */ 
+#hiddenDiv{
+text-align: center;
+}
+
+.gameDiv {
+  margin: 0;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(250, 66, 66, 0.8);
+
+}
+
+.gameDiv:before{
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color:rgba(250, 66, 66, 0.8);
+}
+
+.gameDiv:after{
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  content: '';
+   
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+ 
+  background-color:rgba(250, 66, 66, 0.8);
+}
+
+
+/* ************************************************************************************ 
+                                      Game Styles
+                                      
+ ************************************************************************************ */ 
+
+.intro {
+  padding-left: 280px;
+}
+
+.button2 {
+  z-index: 2;
+  display: none;
+}
+
+.button3 {
+  display: none;
+}
+
+.button4 {
+  display: none;
+}
+
+#thatTextButton {
+  display: none;
+}
+
+#resetButton {
+  display: none;
+}
+
+button {
+  border-radius: 50%;
+  font-weight: bold;
+}
