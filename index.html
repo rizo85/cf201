@@ -6,7 +6,7 @@
  
   <meta charset="utf-8">
   
-  <title>Lab: 02</title>
+  <title>Lab: 03</title>
 
   
 
@@ -37,17 +37,57 @@
 
     <p>My name is Rob, and I have a military background. While I am only 35 years old, sometimes I feel like im much older: from foster care I joined the military at 17; I served honorably for 10 years; I am in the process of buying my fisrt home; I am enrolled in a very exciting and complicated tech boot - camp with Code Fellows!</p>
 
-    <p>My education was funded by the GI bill. I attended college course while in active duty and obtained an Associates in Liberal arts and later a Bachelors in Computer Science by Excelsior college in 2018.</p>
+    <div id="listContainer">
+
+    <div class="schoolEd">
+
+    <h3>Education</h3>
+
+      <ul>
+        <li>Associates of Liberal Arts</li>
+          <ul>
+            <li>Excelsior College - 2016</li>
+          </ul>
+        <li>Bachelors of Computer Science</li>
+          <ul>  
+            <li>Excelsior College - 2018</li>
+          </ul>
+        <li>Full Stack advanced JavaScript Course</li>
+          <ul>  
+            <li>Code Fellows - Current</li>
+          </ul>
+        </ul>
+
+      </div>
+
+    <div class="schoolEd">  
+
+      <h3>Employment</h3>
+
+      <ul>
+        <li>Junior CRM Developer</li>
+          <ul>
+            <li>TCS America - 2018 - 2019</li>
+          </ul>
+        <li>Web developer</li>
+          <ul>
+            <li>Infosys 2019 - present</li>
+          </ul>
+      </ul>
+
+    </div>
+
+    </div>
 
   </header>
   
   <main id="main">
 
-    <h3 id="gameHeading">Lets play a game: take a wild guess and guess "yes" or "no"</h3>
+    <h2 id="gameHeading">Quiz</h2>
+
+    <h3 id="gameHeading">Questions 1 - 5: "yes" or "no" answers please</h3>
 
     <div id="gameboard" >
-
-
 
      <div id="q1" class="question" >
 
@@ -63,7 +103,7 @@
 
       <div id="q2" class="question" >
 
-        <button id="button1" class="button1" onclick="prompt2()">Question 2</button>
+        <button id="button2" class="button1" onclick="prompt2()">Question 2</button>
 
         <p id="statement2"></p>
 
@@ -75,7 +115,7 @@
 
       <div id="q3" class="question" >
 
-        <button id="button1" class="button1" onclick="prompt3()">Question 3</button>
+        <button id="button3" class="button1" onclick="prompt3()">Question 3</button>
 
         <p id="statement3"></p>
 
@@ -87,7 +127,7 @@
 
       <div id="q4" class="question" >
 
-        <button id="button1" class="button1" onclick="prompt4()">Question 4</button>
+        <button id="button4" class="button1" onclick="prompt4()">Question 4</button>
 
         <p id="statement4"></p>
 
@@ -99,7 +139,7 @@
 
       <div id="q5" class="question" >
 
-        <button id="button1" class="button1" onclick="prompt5()">Question 5</button>
+        <button id="button5" class="button1" onclick="prompt5()">Question 5</button>
 
         <p id="statement5"></p>
 
@@ -109,8 +149,56 @@
 
       </div>
 
-      <p><span id="uNPH">guest</span>'s score: <span id="score">0</span> out of 5.</p>
+      </div>
 
+      <div id="gameboard1" >
+
+        <div id="q6" class="question2" >
+
+          <h3 id="gameHeading">Questions 6: try to guess the right number from 1 - 10 </h3>
+   
+           <button id="button6" class="button1" onclick="prompt6()">Question 6</button>
+   
+           <p id="statement6"></p>
+   
+           <p id="statement6Reply"></p>
+   
+           <p id="statement6Request"></p>
+   
+         </div>
+   
+         <div id="q7" class="question2" >
+
+          <h3 id="gameHeading">Questions 6: try to guess my favorite book</h3>
+   
+           <button id="button7" class="button1" onclick="prompt7()">Question 7</button>
+   
+           <p id="statement7"></p>
+   
+           <p id="statement7Reply"></p>
+   
+           <p id="statement7Request"></p>
+   
+         </div>
+   
+         <p><span id="uNPH2">guest</span>'s score: <span id="score">0</span> out of 7.</p>
+   
+         </div>
+
+      <div>
+      <h2>My top ten artist</h2>  
+        <ol>
+          <li>Banksy</li>
+          <li>Gaga</li>
+          <li>Bjork</li>
+          <li>VanGogh</li>
+          <li>Wintercroft</li>
+          <li>Come de Garcons</li>
+          <li>Warhol</li>
+          <li>Kahlo</li>
+          <li>Ai Weiwei</li>
+          <li>Kentaro Miura</li>
+        </ol>
       </div>
 
   </main>

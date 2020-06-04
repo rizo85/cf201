@@ -20,7 +20,7 @@
   background-color: #010111;
   text-align: left;
   padding: 10%;
-  overflow: hidden;
+
 }
 
 body {
@@ -40,9 +40,7 @@ main {
   text-align: center;
 }
 
-footer {
-  display: inline-block;
-}
+
 
 p {
   z-index: 2;
@@ -122,14 +120,43 @@ p {
                                       Game Styles
                                       
  ************************************************************************************ */ 
-
-.intro {
-  padding-left: 280px;
+ #gameBoard{
+  text-align: center;
+  background-color: #ffe6e6;
 }
 
 .question{
   width: 20%;
   float: left;
+}
+
+#gameBoard1{
+  text-align: center;
+}
+
+.question2{
+  
+  width: 50%;
+  float: left;
+}
+
+
+#listConatiner {
+  width: 100%;
+  border: 3px solid #fff;
+    padding: 20px;
+}
+
+.schoolEd {
+  width: 45%;
+  height: 200px;
+    float: left;
+    padding: 20px;
+
+}
+
+.intro {
+  padding-left: 280px;
 }
 
 .button2 {

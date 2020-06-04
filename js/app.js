@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 'use strict';
 
 /* eslint-disable no-unused-vars */
@@ -10,9 +11,25 @@ var reply3; //global variable
 
 var reply4; //global variable
 
+var reply6; //global variable
+
+var reply7; //global variable
+
+var k = 7;
+
 var uName;
 
 var counter = 0;
+
+var guestNum = 9;
+
+var book1 = 'feed';
+
+var book2 = 'sandman';
+
+var book3 = 'bleach';
+
+var i = 5;
 
 // first button: asks for name in prompt
 
@@ -33,6 +50,8 @@ function prompt0() {
   // document.getElementById('docBody').style.color = 'black';
 
   document.getElementById('uNPH').innerHTML = reply0;
+
+  document.getElementById('uNPH2').innerHTML = reply0;
 
   console.log('user name is: ' + reply0);
 
@@ -67,13 +86,13 @@ function prompt1() {
 
       document.getElementById('score').innerHTML = counter;
 
+      document.getElementById('button1').style.display = 'none';
+
     } else if (lower === 'no') {
 
       document.getElementById('statement1Reply').innerHTML =
 
-    'You are wrong!';
-
-      counter--;
+    'Try again!';
 
       document.getElementById('score').innerHTML = counter;
 
@@ -115,14 +134,13 @@ function prompt2() {
 
       document.getElementById('score').innerHTML = counter;
 
+      document.getElementById('button2').style.display = 'none';
 
     } else if (lower === 'yes') {
 
       document.getElementById('statement2Reply').innerHTML =
 
-    'You are wrong!';
-
-      counter--;
+    'Try again!';
 
       document.getElementById('score').innerHTML = counter;
 
@@ -164,13 +182,13 @@ function prompt3() {
 
       document.getElementById('score').innerHTML = counter;
 
+      document.getElementById('button3').style.display = 'none';
+
     } else if (lower === 'no') {
 
       document.getElementById('statement3Reply').innerHTML =
 
-    'You are wrong!';
-
-      counter--;
+    'try again!';
 
       document.getElementById('score').innerHTML = counter;
 
@@ -210,17 +228,15 @@ function prompt4() {
 
       counter++;
 
+      document.getElementById('button4').style.display = 'none';
+
       document.getElementById('score').innerHTML = counter;
 
     } else if (lower === 'yes') {
 
       document.getElementById('statement4Reply').innerHTML =
 
-    'You are wrong!';
-
-      counter--;
-
-      document.getElementById('score').innerHTML = counter;
+    'Try again!';
 
     } else {
 
@@ -258,23 +274,199 @@ function prompt5() {
 
       counter++;
 
+      document.getElementById('button5').style.display = 'none';
+
       document.getElementById('score').innerHTML = counter;
 
     } else if (lower === 'no') {
 
       document.getElementById('statement5Reply').innerHTML =
 
-    'You are wrong!';
-
-      counter--;
-
-      document.getElementById('score').innerHTML = counter;
+    'Try again!';
 
     } else {
 
       document.getElementById('statement5Reply').innerHTML =
 
     'Please: yes or no only';
+
+    }
+
+  }
+
+}
+
+function prompt6() {
+
+  i--;
+
+  var reply6 = prompt('Guess a number between 1 - 10?', '0');
+
+  if (reply6 !== null) {
+
+    document.getElementById('statement6').innerHTML =
+
+    'You answered: ' + reply6 + '.';
+
+    console.log('The reply to Q6 was: ' + reply6);
+
+    window.reply6 = reply6;
+
+    console.log('i is : ' + i);
+
+    for (var j = 0; j < i; j++) {
+
+      if (reply6 == guestNum) {
+
+        document.getElementById('statement6Reply').innerHTML =
+
+        'You are right!';
+
+        counter++;
+
+
+
+        document.getElementById('button6').style.display = 'none';
+
+        document.getElementById('score').innerHTML = counter;
+
+        break;
+
+
+
+      } else if (reply6 !== guestNum) {
+
+        document.getElementById('statement6Reply').innerHTML =
+
+        'Try again! ' + j + ' attempts left';
+
+        console.log('new i value if wrong : ' + j);
+
+        if (j === 0) {
+
+          document.getElementById('statement6Reply').innerHTML =
+
+        'sorry! The number was: ' + guestNum;
+
+          // document.getElementById('button6').style.display = 'none';
+
+        }
+
+
+      } else if (i === 0) {
+
+        document.getElementById('statement6Reply').innerHTML =
+
+        'sorry! The number was: ' + guestNum;
+
+
+
+      }
+
+    }
+
+  }
+
+}
+
+function prompt7() {
+
+  k--;
+
+  var reply7 = prompt('Guess My favorite book?', 'one');
+
+  var lower1 = reply7.toLowerCase();
+
+  if (lower1 !== null) {
+
+    document.getElementById('statement7').innerHTML =
+
+    'You answered: ' + lower1 + '.';
+
+    console.log('The reply to Q7 was: ' + lower1);
+
+    window.reply7 = lower1;
+
+    console.log('k is : ' + k);
+
+    for (var j = 0; j < k; j++) {
+
+      if (lower1 == book1) {
+
+        document.getElementById('statement7Reply').innerHTML =
+
+        'You are right!';
+
+        counter++;
+
+
+
+        document.getElementById('button7').style.display = 'none';
+
+        document.getElementById('score').innerHTML = counter;
+
+        break;
+
+      } else if (lower1 == book2) {
+
+        document.getElementById('statement7Reply').innerHTML =
+
+        'You are right!';
+
+        counter++;
+
+
+
+        document.getElementById('button7').style.display = 'none';
+
+        document.getElementById('score').innerHTML = counter;
+
+        break;
+
+      } else if (lower1 == book3) {
+
+        document.getElementById('statement7Reply').innerHTML =
+
+        'You are right!';
+
+        counter++;
+
+
+
+        document.getElementById('button7').style.display = 'none';
+
+        document.getElementById('score').innerHTML = counter;
+
+        break;
+
+      } else if (lower1 !== book1 || lower1 !== book2 || lower1 !== book3) {
+
+        document.getElementById('statement7Reply').innerHTML =
+
+        'Try again! ' + j + ' attempts left';
+
+        console.log('new i value if wrong : ' + j);
+
+        if (j === 0) {
+
+          document.getElementById('statement7Reply').innerHTML =
+
+        'sorry! The books were: ' + book1 + ', ' + book2 + ', and ' + book3 + '.';
+
+          // document.getElementById('button6').style.display = 'none';
+
+        }
+
+
+      } else if (i === 0) {
+
+        document.getElementById('statement6Reply').innerHTML =
+
+        'sorry! The number was: ' + guestNum;
+
+
+
+      }
 
     }
 
@@ -311,3 +503,4 @@ function showTheText() {
 'Your pet is ' + a + ', and it is a ' + b + '! It loves ' + c + ' and can be found drowsy around a ' + d + ' where it likes to nap.';
 
 }
+
