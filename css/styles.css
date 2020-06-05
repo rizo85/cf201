@@ -120,6 +120,12 @@ p {
                                       Game Styles
                                       
  ************************************************************************************ */ 
+
+#score {
+  color: red;
+  font-weight: bolder;
+}
+
  #gameBoard{
   text-align: center;
   background-color: #ffe6e6;
