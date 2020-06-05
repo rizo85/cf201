@@ -1,19 +1,22 @@
-/* eslint-disable eqeqeq */
 'use strict';
+
+/* eslint-disable eqeqeq */
 
 /* eslint-disable no-unused-vars */
 
-var reply1; //global variable
+/* Global Variables */
 
-var reply2; //global variable
+var reply1;
 
-var reply3; //global variable
+var reply2;
 
-var reply4; //global variable
+var reply3;
 
-var reply6; //global variable
+var reply4;
 
-var reply7; //global variable
+var reply6;
+
+var reply7;
 
 var k = 7;
 
@@ -31,7 +34,7 @@ var book3 = 'bleach';
 
 var i = 5;
 
-// first button: asks for name in prompt
+/* My welcome message div */
 
 function prompt0() {
 
@@ -57,8 +60,9 @@ function prompt0() {
 
   uName = reply0;
 
-
 }
+
+/* Question one: The answer is yes */
 
 function prompt1() {
 
@@ -342,18 +346,18 @@ function prompt6() {
 
         console.log('new i value if wrong : ' + j);
 
-        if (j === 0) {
+        if (i === 1) {
 
           document.getElementById('statement6Reply').innerHTML =
 
         'sorry! The number was: ' + guestNum;
 
-          // document.getElementById('button6').style.display = 'none';
+          document.getElementById('button6').style.display = 'none';
 
         }
 
 
-      } else if (i === 0) {
+      } else if (i === 1) {
 
         document.getElementById('statement6Reply').innerHTML =
 
@@ -447,13 +451,13 @@ function prompt7() {
 
         console.log('new i value if wrong : ' + j);
 
-        if (j === 0) {
+        if (k === 1) {
 
           document.getElementById('statement7Reply').innerHTML =
 
         'sorry! The books were: ' + book1 + ', ' + book2 + ', and ' + book3 + '.';
 
-          // document.getElementById('button6').style.display = 'none';
+          document.getElementById('button7').style.display = 'none';
 
         }
 
