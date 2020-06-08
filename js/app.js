@@ -46,6 +46,8 @@ function prompt0() {
 
   document.getElementById('main').style.display = 'block';
 
+  document.getElementById('gameDiv').style.display = 'inline-block';
+
   // so... if i have a black bkgrnd i wan to go black text teal bckgrnd....
 
   // document.getElementById('theWholeDocHTML').style.backgroundColor = '#32a8a6';
@@ -338,11 +340,30 @@ function prompt6() {
 
 
 
-      } else if (reply6 !== guestNum) {
+      } else if (reply6 < guestNum) {
 
         document.getElementById('statement6Reply').innerHTML =
 
-        'Try again! ' + j + ' attempts left';
+        'Try again: too low! ' + j + ' attempts left';
+
+        console.log('new i value if wrong : ' + j);
+
+        if (i === 1) {
+
+          document.getElementById('statement6Reply').innerHTML =
+
+        'sorry! The number was: ' + guestNum;
+
+          document.getElementById('button6').style.display = 'none';
+
+        }
+
+
+      } else if (reply6 > guestNum) {
+
+        document.getElementById('statement6Reply').innerHTML =
+
+        'Try again: too high! ' + j + ' attempts left';
 
         console.log('new i value if wrong : ' + j);
 

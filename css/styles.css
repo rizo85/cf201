@@ -19,7 +19,7 @@
  html {
   background-color: #010111;
   text-align: left;
-  padding: 10%;
+  padding: 6%;
 
 }
 
@@ -30,29 +30,72 @@ body {
 }
 
 header {
-  padding-left: 280px;
-  padding-bottom: 10px;
   display: none;
 }
 
-main {
-  display: none;
-  text-align: center;
+ul{
+list-style-type: none;
 }
 
 
 
-p {
-  z-index: 2;
-}
 
 /* ************************************************************************************ 
-                                      specific Styles
+                                      Header specific Styles
 
                                       All the styles for the smaller 
                                       structures in my page
                                       
  ************************************************************************************ */
+  #wrapperDiv{
+    border: solid 3px rgba(250, 66, 66, 0.8);
+    border-radius: 20px;
+  }
+
+
+ #welcomeHolder{
+  height: 200px;
+  padding: 10px;
+  padding-right: 25px;
+}
+
+
+#list1Holder{
+  height: 200px;
+  width: 50%;
+  display:block;
+  float: left;
+}
+
+#list1HolderHeading{
+  text-align: center;
+  position: relative;
+}
+
+#list1HolderList{
+  position: relative;
+  text-align: center;
+  list-style: inside;
+}
+
+#list2Holder{
+  height: 200px;
+  width: 50%;
+  display:block;
+  float: right;
+}
+
+#list2HolderHeading{
+  text-align: center;
+  position: relative;
+}
+
+
+#list2HolderList{
+  position: relative;
+  text-align: center;
+  list-style: inside;
+}
 
 /* ************************************************************************************ 
                                       Heart decoration
@@ -65,9 +108,9 @@ p {
                                       
  ************************************************************************************ */ 
 
-.gameDiv {
+ .gameDiv {
   margin: 0;
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 200px;
   background-color: rgba(250, 66, 66, 0.8);
@@ -104,16 +147,152 @@ p {
   background-color:rgba(250, 66, 66, 0.8);
 }
 
+#gameDivHolder{
+  height: 200px;
+  width: 200px;
+
+  float: left;
+  margin-right: 40px;
+}
+
+/* ************************************************************************************ 
+                                      Heart decoration 2
+
+                                      a second one for the bottom of the page
+
+                                      I got the heart div from:
+
+                                      https://www.hongkiat.com/blog/css-heart-shape/
+                                      
+ ************************************************************************************ */ 
+
+ .gameDiv1 {
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(250, 66, 66, 0.8);
+  transform: rotate(-0deg);
+
+}
+
+.gameDiv1:before{
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color:rgba(250, 66, 66, 0.8);
+  
+}
+
+.gameDiv1:after{
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  content: '';
+   
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+ 
+  background-color:rgba(250, 66, 66, 0.8);
+
+  transform-origin: 0 100%;
+}
+
+#gameDivHolder1{
+  position: relative;
+  height: 300px;
+  width: 200px;
+  width: 30%;
+  display:block;
+  float: right;
+  margin-bottom: 0;
+}
+
+ /* ************************************************************************************ 
+                                      Main specific Styles
+
+                                      All the styles for the smaller 
+                                      structures in my page
+                                      
+ ************************************************************************************ */
+
+main {
+  display: none;
+  text-align: center;
+}
+
+
 /* ************************************************************************************ 
                                       Welcome Div
 
                                       just extra, not using an image yet.
                                  
+                                      The whole html doc has 10% padding around it,
+
+                                      so to lower the hidden vid containing button 0
+
+                                      i add margin on top of that.
  ************************************************************************************ */ 
 
  #hiddenDiv{
   text-align: center;
 
+  }
+
+  #button0 {
+position: absolute;
+margin-top: 10%;
+cursor: pointer;
+width: 100px;
+    height: 90px;
+    color: black;
+    background-color: black;
+    border-style: none;
+    z-index: 2;
+  }
+
+
+
+  #button0:before,
+  #button0:after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(250, 4, 4, 0.8);
+    border: solid white 3px;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  #button0:after {
+    z-index: -2;
+    background: rgb(250, 4, 4, 0.8);
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    border-right: none;
+    border-right: none;
   }
   
 /* ************************************************************************************ 
@@ -121,14 +300,48 @@ p {
                                       
  ************************************************************************************ */ 
 
+.question6{
+  height: 200px;
+  width: 50%;
+  display:block;
+  float: left;
+  overflow: hidden;
+}
+
+#gameHeading1{
+  line-height: 60px;
+}
+
+.question7{
+  height: 200px;
+  width: 50%;
+  display:block;
+  float: right;
+  overflow: hidden;
+}
+
+
 #score {
   color: red;
   font-weight: bolder;
 }
 
+
+
+#scoreBoardHolder{
+
+
+  position: fixed;
+width: 8%;
+  bottom: 20px;
+  border-radius: 40px;
+
+  border: solid 3px white;
+}
+
  #gameBoard{
   text-align: center;
-  background-color: #ffe6e6;
+  height: 140px;
 }
 
 .question{
@@ -147,23 +360,8 @@ p {
 }
 
 
-#listConatiner {
-  width: 100%;
-  border: 3px solid #fff;
-    padding: 20px;
-}
 
-.schoolEd {
-  width: 45%;
-  height: 200px;
-    float: left;
-    padding: 20px;
 
-}
-
-.intro {
-  padding-left: 280px;
-}
 
 .button2 {
   z-index: 2;
@@ -189,4 +387,39 @@ p {
 button {
   border-radius: 50%;
   font-weight: bold;
+  padding: 10px;
+}
+
+
+.statement{
+  color: blueviolet;
+}
+
+.request{
+  color: rgb(226, 110, 43);
+}
+
+/* ************************************************************************************ 
+                                      Top 10 list styles
+
+                                      
+                                      
+ ************************************************************************************ */
+
+#top10Holder{
+  height: 300px;
+
+}
+
+#top10{
+  width: 70%;
+  display:block;
+  float: left;
+text-align: justify;
+}
+
+#top10Heading{
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: xx-large;
 }
